@@ -38,5 +38,7 @@ Databases: MySQL
 **Certifications :**
 
 **Contact Me :**
+* Email: [vanapalliraghavendra4@gmail.com]
+* LinkedIn: [https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/]
 
 Thank you for visiting my portfolio! I look forward to connecting with you.
