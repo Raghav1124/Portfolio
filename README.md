@@ -1,18 +1,18 @@
 # My Portfolio
 Hi! Welcome to my portfolio website. Here you can find information about my projects, skills, certifications, and how to contact me.
 
-**Sections :**
+## Sections :
 * About Me
 * Skills
 * Projects
 * Certifications
 * Contact Me
 
-**About Me :**
+## About Me :
 A brief introduction about myself, my background, and my passion.
 
-**Skills :**
-Technical Skills:
+## Skills : 
+**Technical Skills:**
 * Programming Languages: C, Python
 Databases: MySQL
 * Soft Skills
@@ -22,7 +22,7 @@ Databases: MySQL
 - Time Management: Proven ability to manage multiple projects and meet deadlines
 
 
-**Projects :**
+## Projects :
 
 **Project 1: [ATM-INTERFACE]**
 * Description: This Python project simulates an ATM (Automated Teller Machine) system built using console-based interface. It allows users to perform various banking operations after successfully authenticating with their user ID and PIN..
@@ -36,10 +36,10 @@ Databases: MySQL
 * Live Demo: [CLICK HERE](https://raghav1124.github.io/LOGIN-AND-REGISTRATION-FORM/)
 
 
-**Certifications :**
+## Certifications :
 
 
-**Contact Me :**
+## Contact Me :
 * Email: [vanapalliraghavendra4@gmail.com]
 * LinkedIn: [https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/]
 
