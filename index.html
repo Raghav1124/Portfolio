@@ -2,304 +2,678 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanapalli Raghavendra | AI & Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">VANAPALLI RAGHAVENDRA</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#experience">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">VR</span>
+                <span class="logo-name">Vanapalli Raghavendra</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">VANAPALLI RAGHAVENDRA</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Vanapalli <span class="highlight">Raghavendra</span></h1>
+                <h2 class="hero-subtitle">AI & Data Science Student | Machine Learning Enthusiast</h2>
+                <p class="hero-description">
+                    Passionate about developing intelligent solutions using AI/ML technologies. Currently pursuing B.Tech in AI & Data Science with hands-on experience in software engineering, machine learning, and web development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="assets/resume.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Raghav1124" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:vanapalliraghavendra4@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#certifications" onclick="toggleMenu()">Certification</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="assets/profile-pic.png" alt="Vanapalli Raghavendra">
+                    <div class="image-overlay"></div>
+                </div>
             </div>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profile-pic.png" alt=" profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">VANAPALLI RAGHAVENDRA</h1>
-            
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
-            Download CV
-          </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-            </div>
-            <div id="socials-container">
-                <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/'" />
-                <img src="assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Raghav1124'" />
-            </div>
-        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Get to know me better</p>
+                <div class="underline"></div>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
 
-                    <div class="details-container">
-                        <img src="assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Pursuing a Bachelor's degree in Artificial Intelligence and Data Science.</p>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/about-pic.jpg" alt="About Me">
                     </div>
-
                 </div>
-                <div class="text-container">
+                <div class="about-content">
+                    <h3>AI & Data Science Student at Vignan's Institute of Information Technology</h3>
                     <p>
-                        As a tech enthusiast with a basic foundation in programming, I am proficient in various programming languages including C, Python, HTML, CSS, JS, MySql and Relational Databases, I possess a broad range of technical skills that enable me to tackle complex
-                        challenges and deliver effective solutions. I have a passion for problem-solving and love to explore new technologies and tools to enhance my skills. Through my experience, I have gained knowledge in developing code that deliver
-                        optimal performance. I am constantly learning and adapting to stay up-to-date.
+                        I am a passionate AI and Data Science student with strong technical skills in machine learning, software development, and data analysis. My academic journey has equipped me with solid foundations in programming, algorithms, and statistical analysis, which
+                        I apply to solve real-world problems.
                     </p>
-                </div>
-            </div>
-        </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
 
-                    <div class="article-container">
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4>B.Tech in Artificial Intelligence & Data Science</h4>
+                            <p class="edu-institution">Vignan's Institute of Information Technology, Visakhapatnam</p>
+                            <div class="edu-details">
+                                <span class="edu-cgpa"><i class="fas fa-star"></i> CGPA: 8.33/10</span>
+                                <span class="edu-duration"><i class="fas fa-calendar"></i> Nov 2021 – May 2025</span>
                             </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-
-
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Ms Excel</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
+                        </div>
                     </div>
-                </div>
-                <div class="details-container">
 
-                    <div class="article-container">
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Relational Database</h3>
-                                <p>basic</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>PYTHON</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C language</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">vanapalliraghavendra4@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Visakhapatnam, Andhra Pradesh</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">+91 7095133034</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value">Available for Internships</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-1.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">ATM-INTERFACE</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Raghav1124/-OCTANET_MAY-ATM-Console-Application'">
-                Github
-              </button>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Technologies & Tools I Work With</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">Python</span>
+                        <span class="skill-tag expert">SQL</span>
+                        <span class="skill-tag intermediate">C++</span>
+                        <span class="skill-tag intermediate">JavaScript</span>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-2.png" alt="Project 2" class="project-img" />
+
+                <!-- Machine Learning -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
                     </div>
-                    <h2 class="experience-sub-title project-title">Login & Registration Form</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Raghav1124/LOGIN-AND-REGISTRATION-FORM'">
-                Github
-              </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://raghav1124.github.io/LOGIN-AND-REGISTRATION-FORM/'">
-                Live Demo
-              </button>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">SVM</span>
+                        <span class="skill-tag intermediate">TensorFlow</span>
+                        <span class="skill-tag intermediate">Keras</span>
+                        <span class="skill-tag expert">NumPy</span>
+                        <span class="skill-tag expert">Pandas</span>
+                        <span class="skill-tag intermediate">Matplotlib</span>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-3.png" alt="Project 3" class="project-img" />
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
                     </div>
-                    <h2 class="experience-sub-title project-title">Portfolio</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Raghav1124/Portfolio/'">
-                Github
-              </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://raghav1124.github.io/Portfolio/'">
-                Live Demo
-              </button>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">MySQL</span>
+                        <span class="skill-tag intermediate">Oracle</span>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">HTML</span>
+                        <span class="skill-tag expert">CSS</span>
+                        <span class="skill-tag intermediate">Bootstrap</span>
+                        <span class="skill-tag intermediate">Flask</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">GitHub</span>
+                        <span class="skill-tag intermediate">Google Colab</span>
+                        <span class="skill-tag intermediate">Power BI</span>
+                        <span class="skill-tag expert">Excel</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag soft">Problem Solving</span>
+                        <span class="skill-tag soft">Communication</span>
+                        <span class="skill-tag soft">Teamwork</span>
+                        <span class="skill-tag soft">Adaptability</span>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
     </section>
 
-    <section id="certifications">
-        <p class="section__text__p1">Here are my </p>
-        <h1 class="title">Certifications</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/certificate.png" alt="certificate 1" class="project-img" />
-                    </div>
-                    <h2>Introduction to SQL</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='assets/CERTIFICATE-1.png'">
-                            View Certificate
-              </button>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Some of my recent work</p>
+                <div class="underline"></div>
+            </div>
 
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-money-check-alt project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Raghav1124/-OCTANET_MAY-ATM-Console-Application" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ATM Console Application</h3>
+                    <p class="project-description">
+                        Python-based ATM simulation system implementing core banking functionalities including user authentication, balance inquiry, cash withdrawal, and deposit features.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OOP</span>
                     </div>
                 </div>
 
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/certificate.png" alt="certificate 1" class="project-img" />
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-user-lock project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Raghav1124/LOGIN-AND-REGISTRATION-FORM" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://raghav1124.github.io/LOGIN-AND-REGISTRATION-FORM/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h2>SQL and Relational Databases</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='assets/CERTIFICATE-2.png'">View Certificate
-              </button>
-
+                    <h3 class="project-title">Login & Registration Form</h3>
+                    <p class="project-description">
+                        Responsive web form with client-side validation for secure user registration and login functionality using HTML, CSS, and JavaScript.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/certificate.png" alt="certificate 1" class="project-img" />
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-tasks project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Raghav1124" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h2>Data Representation and Visualization in Tableau</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='assets/CERTIFICATE-3.png'">
-                            View Certificate
-              </button>
+                    <h3 class="project-title">To-Do List Application</h3>
+                    <p class="project-description">
+                        Python application for efficient task management with features to add, remove, update, and mark tasks as complete with persistent data storage.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">File Handling</span>
+                    </div>
+                </div>
 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-calculator project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Raghav1124" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Age Calculator</h3>
+                    <p class="project-description">
+                        Python program that accurately calculates age based on birth date input with precise year, month, and day calculations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">DateTime</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-user-graduate project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Raghav1124" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Student Management System</h3>
+                    <p class="project-description">
+                        Comprehensive SQL-based system for educational institutions to manage student records, user logins, passwords, and administrative tasks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-laptop-code project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        Responsive personal portfolio website showcasing projects, skills, certifications, and contact information with modern UI/UX design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:vanapalliraghavendra4@gmail.com">vanapalliraghavendra4@gmail.com</a></p>
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">Professional Internships & Roles</p>
+                <div class="underline"></div>
             </div>
-            <div class="contact-info-container">
-                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/">LinkedIn</a></p>
 
+            <div class="timeline">
+                <!-- Internship 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>AI/ML Software Engineering Intern</h3>
+                                <p class="company">EdygradOne Pvt Ltd</p>
+                            </div>
+                            <span class="timeline-date">Dec 2024 – Apr 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Designed and trained SVM-based predictive models for fake profile detection, achieving 95% accuracy</li>
+                                <li>Explored MLOps, Explainable AI (XAI), and AutoML for scalable ML workflows</li>
+                                <li>Implemented machine learning pipelines for data preprocessing and model deployment</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SVM</span>
+                                <span class="tech-badge">MLOps</span>
+                                <span class="tech-badge">XAI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Python Software Engineering Intern</h3>
+                                <p class="company">OctaNet Services Pvt Ltd</p>
+                            </div>
+                            <span class="timeline-date">May 2024 – Jun 2024</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Developed an ATM Simulation System implementing core banking functionalities using Python</li>
+                                <li>Optimized program logic, reducing debugging time by 30% for complex transaction flows</li>
+                                <li>Implemented object-oriented programming principles for modular and maintainable code</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">OOP</span>
+                                <span class="tech-badge">Debugging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Web Software Engineer Intern</h3>
+                                <p class="company">SkillVertex</p>
+                            </div>
+                            <span class="timeline-date">May 2023 – Jun 2023</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Built a responsive portfolio website using HTML, CSS, and JavaScript with cross-browser compatibility</li>
+                                <li>Improved user experience and page responsiveness through clean UI design and optimized styling</li>
+                                <li>Implemented responsive design principles for mobile-first approach</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & <span class="highlight">Achievements</span></h2>
+                <p class="section-subtitle">Professional Certifications Earned</p>
+                <div class="underline"></div>
             </div>
-        </nav>
-        <p>Copyright . All Rights Reserved.</p>
+
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to Cybersecurity - CCNA</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <p class="cert-date">Issued: 2024</p>
+                        <a href="assets/CERTIFICATE-4.png" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>SQL and Relational Databases</h3>
+                        <p class="cert-issuer">cognitive class.ai powered by IBM Skills Network</p>
+                        <p class="cert-date">Issued: 2023</p>
+                        <a href="assets/CERTIFICATE-2.PNG" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Data Representation and Visualization in Tableau</h3>
+                        <p class="cert-issuer">RITx-edX</p>
+                        <p class="cert-date">Issued: 2023</p>
+                        <a href="assets/CERTIFICATE-3.png" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to SQL</h3>
+                        <p class="cert-issuer">edX-offered by IBM</p>
+                        <p class="cert-date">Issued: 2023</p>
+                        <a href="assets/CERTIFICATE-1.png" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">Let's work together</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>vanapalliraghavendra4@gmail.com</p>
+                            <a href="mailto:vanapalliraghavendra4@gmail.com" class="contact-link">
+                                Send Email <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 7095133034</p>
+                            <a href="tel:+917095133034" class="contact-link">
+                                Call Now <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Vanapalli Raghavendra</p>
+                            <a href="https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/" target="_blank" class="contact-link">
+                                Connect <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>@Raghav1124</p>
+                            <a href="https://github.com/Raghav1124" target="_blank" class="contact-link">
+                                View Profile <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">VR</span>
+                    <h3>Vanapalli Raghavendra</h3>
+                    <p>AI & Data Science Student | Tech Developer</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vanapalli-raghavendra-039bb124a/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Raghav1124" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:vanapalliraghavendra4@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917095133034">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanapalli Raghavendra. All rights reserved.</p>
+                <p>Designed & Developed with ❤️</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
